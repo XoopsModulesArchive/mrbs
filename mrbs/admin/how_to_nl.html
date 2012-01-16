@@ -1,0 +1,158 @@
+<!-- $Id: basic_how_to.html $ -->
+
+<div id="basic_how_to_contents">
+  <a name="top"></a><h4>Basic how to guide (feb. 26-2009) nederlands</h4>
+  <ul>
+    <li><a href="#getting_started">Hoe starten</a></li>
+    <li><a href="#themes">Hoe werken thema's in MRBS</a></li>
+	<li><a href="#change_entry_types">Hoe kan ik de achtergrondkleur bij 'soort' 
+	wijzigen (entry types)?</a></li>
+	<li><a href="#location_languagefiles">Waar kan ik de taal bestanden vinden?</a></li>
+	<li><a href="#new_languagefiles">Ik heb een taalbestand en /of een nieuw faq 
+	bestand gemaakt maar kan het niet vinden bij instellingen.</a></li>
+	<li><a href="#change_words">Waar kan ik de gebruikte tekst voor 'periode' (periods) 
+	en 'soort' (entry type) aanpassen?</a></li>
+	<li><a href="#enter_mail_room_area_admin">Waar kan ik de mailadressen voor 
+	kamer en/of gebouw beheerder ingeven?</a></li>
+  </ul>
+</div>
+
+<div id="basic_how_to_body">
+
+  <div id="getting_started">
+    <h4>Hoe starten.</h4>
+    <ul>
+		<li>Na installatie van de module ga je naar instellingen, vul de 
+		parameters in en bewaar alles.</li>
+		<li>Maak gebouwen en kamers aan.</li>
+		<li>Zorge ervoor dat je&nbsp; xoops users / groepen toegang hebben tot 
+		de module, Systeem / Groepen / Module Access rights</li>
+		<li>Website admins hebben volledige toegang tot de MRBS module</li>
+	</ul>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="themes">
+    <h4>Hoe werken thema's in MRBS?</h4>
+    <p>
+      Thema's in MRBS werken volledig onafhankelijk van het gebruikte website 
+		thema.<br>
+		Het bestand mrbs.css.php in /modules/mrbs bevat de gedeelde CSS 
+		instellingen voor alle MRBS thema's.<br>
+		MRBS thema's kan je vinden in&nbsp; /modules/mrbs/Themes en hebben 
+		standaard de extensie dot inc<br>
+		Twee thema's zijn standaard aanwezig classic126.inc en default.inc</p>
+	<ul>
+		<li>Als je een nieuw thema wil maken / gebruiken plaats het in deze 
+		folder.</li>
+		<li>Als je een nieuw gemaakt thema wil gebruiken dien je het eerst te 
+		activeren door je module te updaten, anders is het niet zichtbaar in de 
+		keuzelijst bij instellingen.</li>
+	</ul>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="change_entry_types">
+    <h4>Hoe kan ik de achtergrondkleur bij 'soort' wijzigen (entry types)?</h4>
+    Deze kleuren moet je aanpassen in het door jou gebruikte MRBS thema. Je kan 
+	deze instellingen vinden rond regel 70 en het ziet er zo uit.<blockquote>
+		<p>// These are the colours used for distinguishing between the dfferent 
+		types of bookings in the main<br>
+		// displays in the day, week and month views<br>
+		$color_types = array(<br>
+		'A' =&gt; &quot;#FFCCFF&quot;,<br>
+		'B' =&gt; &quot;#99CCCC&quot;,<br>
+		.......</p>
+	</blockquote>
+	<p><a href="#top">Top</a>
+  </div>
+  
+  <div id="location_languagefiles">
+    <h4>Waar kan ik de taalbestanden vinden?</h4>
+    <p>
+      MRBS heeft twee verschillende taalsystemen.</p>
+	<p>
+      Backend systeem (admin sectie).<br>
+		Gebruikt het normale xoops taal systeem. Alle bestanden kan je vinden in&nbsp; /modules/mrbs/language/jouwtaal.</p>
+	<p>
+      Frontend systeem (werkt onafhankelijk van jouw xoops website instellingen!)<br>
+		Gebruikt taalbestanden die je kan vinden in /modules/mrbs en deze noemen lang dot 
+		taalcode<br>
+		voorbeeld: nederlands taal bestand noemt lang.nl</p>
+	<p>
+      MRBS gebruikt een eigen systeem om de frontend taal te kiezen en gebruikt 
+		dus NIET het xoops website systeem om dit te doen !!<br>
+		Hierdoor is de MRBS frontend standaard meertalig.<br>
+&nbsp;</p>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="new_languagefiles">
+    <h4>Ik heb een taalbestand en/of nieuw faq bestand gemaakt maar kan het niet 
+	vinden bij de instellingen?</h4>
+    <ul>
+		<li>Heb je het bestand bewaard in /modules/mrbs?</li>
+		<li>Controleer de naam van je taalbestand -&gt; lang dot taalcode -&gt; 
+		voorbeeld lang.nl</li>
+		<li>Controleer de naam van je faqbestand -&gt;&nbsp; site_faq_taal dot html -&gt; 
+		voorbeeld site_faq_nl.html</li>
+		<li>Update je MRBS module -&gt; Xoops Systeem / Modules / Update</li>
+		<li>Ga naar deMRBS instellingen en kies je taal en/of faq bestand</li>
+		<li>Bewaar de instellingen</li>
+	</ul>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="change_words">
+    <h4>Waar kan ik de gebruikte tekst voor periodes (periods) en soort (entry 
+	type) aanpassen?</h4>
+    <p>
+      De frontend van MRBS gebruikt zijn eigen los van Xoops taalsysteem. 
+		Deze bestanden noemen lang dot taalcode.<br>
+		Voorbeeld: nederlands taal bestand noemt lang.nl</p>
+	<p>
+      Omdat de frontend van MRBS standaard meertalig is zal je dus alle gewenste 
+		taalbestanden moeten aanpassen.<br>
+		Zoek naar het onderstaande in de taalbestanden rond lijn 258.Deze 
+		woorden worden gebruikt voor 'soort' (entry types).</p>
+	<p>
+      //xoops - blueteen - entry types<br>
+		$vocab[&quot;A&quot;] = &quot;Cat1&quot;;<br>
+		$vocab[&quot;B&quot;] = &quot;Cat2&quot;;<br>
+		$vocab[&quot;C&quot;] = &quot;Cat3&quot;;<br>
+		$vocab[&quot;D&quot;] = &quot;Cat4&quot;;</p>
+	<p>
+      Zoek naar het onderstaande in de taalbestanden rond lijn 285. Deze woorden 
+		worden gebruikt voor periodes (periods).</p>
+	<p>
+      // MRBS assumes that the descriptions are valid HTML and can be output<br>
+		// directly without any encoding. Please ensure that any special 
+		characters<br>
+		// are encoded, eg '&amp;' to '&amp;amp;', '&gt;' to '&amp;gt;', lower case e acute to
+		<br>
+		// '&amp;eacute;' or '&amp;#233;', etc.<br>
+		$vocab[&quot;P1&quot;] = &quot;Period&amp;nbsp;1&quot;;<br>
+		$vocab[&quot;P2&quot;] = &quot;Period&amp;nbsp;2&quot;;<br>
+		$vocab[&quot;P3&quot;] = &quot;Period&amp;nbsp;3&quot;;</p>
+	<p>
+      &nbsp;<a href="#top">Top</a>
+    </p>
+  </div>
+  
+  
+  <div id="enter_mail_room_area_admin">
+    <h4>Waar kan ik de mailadressen voor kamer en/of gebouwbeheerder ingeven?</h4>
+    <ul>
+		<li>Maak eerst je gebouwen en/of je kamers aan</li>
+		<li>Kies dan Wijzig voor het gebouw of kamer waar je mailadressen wenst 
+		in te geven</li>
+		<li>Geef de mailadressen in, indien meer dan 1 gebruik dan de komma als 
+		scheidingsteken</li>
+		<li>Bewaar</li>
+	</ul>
+    <a href="#top">Top</a>
+    
+  
+  
+	<p>&nbsp;</p>
+	<p>&nbsp;</div>

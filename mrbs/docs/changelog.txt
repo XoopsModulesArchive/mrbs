@@ -1,0 +1,86 @@
+1.48 2012/01/16 Beta:
+=================================
+- updated to ModuleClasses 1.1 (mamba)
+- updated to MRBS 1.4.8 (mamba)
+
+1.41.02 2009/05/15:
+=================================
+- updated to MRBS 1.4.1  (jobrazo)
+
+ Fixed - Some wrong files in 141.01 build (Sorry)
+ Updates page. View here
+
+How to update
+ Replace the files on your webserver whit the ones in the archive.
+ Update the module.
+
+Changes 141.01
+ Fixed - problem with duplicate variables in language files.
+ Fixed - language.inc -> Server failed to set... (patch 1)
+ Added - permissions page. Permissions is based on 5 levels - Anonymous can have view rights, other rights are ignored.
+ Added - limit booking in time - Time limit does not apply to full admins
+ Changed - mail subject now shows area and roomnames instead of MRBS
+ Updates page. View here
+
+How to update
+ Replace the files on your webserver whit the ones in the archive.
+ Update the module.
+
+141 based on Sourceforge MRBS 1.4.1 - march 20, 2009
+=================================
+
+ This version has turned the xoops MRBS port to a real xoops module.
+
+Xoops version changes
+ All settings are now stored inside xoops preferences.
+ Multilingual frontend and backend
+ Clone and multiple install (fully automated)
+ Basic how to guide.
+ Updates page. View here
+
+Some MRBS changes
+ Added the concept of Themes to MRBS.
+ Added the ability to have supplementary text after the company logo or name
+ fixied a bug that stopped time highlighting from working
+ Implemented the option to hide certain days of the week
+
+
+
+1.41 using MRBS 1.4 SVN 986 dec 15 2008
+=================================
+
+All configuration settings must be done in config.inc.php
+ Changelog
+ FIXED - Highlight bug (SVN)
+ FIXED - next button on search page (SVN)
+ FIXED - Typo error in mrbs.css.php (SVN)
+
+ ADDED - $startentrytype - have one or more entry types admin only ex. Maintenance - config.inc.php
+
+ CHANGED - versionnumber of xoopsmodule to 1.41 to avoid confusion
+
+
+
+1.40 using MRBS 1.4 SVN 980 dec 9 2008
+=================================
+
+All configuration settings must be done in config.inc.php
+ Changelog
+ FIXED - CSS problem with firefox (blueteen)
+ FIXED - possible conflict with other calendar modules (blueteen)
+ FIXED - bug in mailbody when changing a booking (SVN)
+
+ ADDED - $showuname - show username or realname - config.inc.php - (jobrazo/blueteen)
+ ADDED - $showpastmonth - show past month in calendar - config.inc.php - (jobrazo/blueteen)
+ ADDED - language variables for subject mail on create or delete (blueteen)
+
+ CHANGED - authentication system (blueteen)
+ CHANGED - mrbs.css.php - calendar th {min-width: 1.5em (2 before)
+
+
+
+1.40 beta2 SVN 963 nov 29 2008
+=================================
+
+ Initial port using Bluetopia's 'old' code.
+

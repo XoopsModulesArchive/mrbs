@@ -1,0 +1,151 @@
+<!-- $Id: basic_how_to.html $ -->
+
+<div id="basic_how_to_contents">
+  <a name="top"></a><h4>Basic how to guide (feb. 26-2009) english</h4>
+  <ul>
+    <li><a href="#getting_started">Getting started</a></li>
+    <li><a href="#themes">How do themes work in MRBS</a></li>
+	<li><a href="#change_entry_types">How do i change the background color for my entry types?</a></li>
+	<li><a href="#location_languagefiles">Where are the language files?</a></li>
+	<li><a href="#new_languagefiles">I made a language file or faq file but cannot 
+	find it in preferences.</a></li>
+	<li><a href="#change_words">Where do i change the words used for periods and 
+	entry types?</a></li>
+	<li><a href="#enter_mail_room_area_admin">Where do i enter the mail address of the room or area admin?</a></li>
+  </ul>
+</div>
+
+<div id="basic_how_to_body">
+
+  <div id="getting_started">
+    <h4>Getting started.</h4>
+    <ul>
+		<li>After installing the module go to preferences to set all configuration 
+		values and save them.</li>
+		<li>Create areas and rooms.</li>
+		<li>Make certain your xoops users / groups have accessrights to the 
+		module, System / Groups / Module Access rights</li>
+		<li>Website admins have full control over the MRBS module</li>
+	</ul>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="themes">
+    <h4>How do themes work in MRBS?</h4>
+    <p>
+      Themes inside MRBS work independent from your site theme.</p>
+	<p>
+      The file mrbs.css.php stored in /modules/mrbs holds the shared theme 
+		values.<br>
+		MRBS themes are 
+		stored in /modules/mrbs/Themes and have by default the extension dot inc.<br>
+		Two themes are included classic126.inc and default.inc</p>
+	<ul>
+		<li>If you want a new theme create one and place it in this folder.</li>
+		<li>If you want to activate / use a new theme you must first update the 
+		module before you can select it on the preferences page.</li>
+	</ul>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="change_entry_types">
+    <h4>How do i change the background color for my entry types?</h4>
+    These colors can be adjusted inside the themefile you use. It looks like 
+	this somewhere around line 70.<blockquote>
+		<p>// These are the colours used for distinguishing between the dfferent 
+		types of bookings in the main<br>
+		// displays in the day, week and month views<br>
+		$color_types = array(<br>
+		'A' =&gt; &quot;#FFCCFF&quot;,<br>
+		'B' =&gt; &quot;#99CCCC&quot;,<br>
+		.......</p>
+	</blockquote>
+	<p><a href="#top">Top</a>
+  </div>
+  
+  <div id="location_languagefiles">
+    <h4>Where are the language files?</h4>
+    <p>
+      MRBS has two different systems for the language files.</p>
+	<p>
+      Backend system (admin section).<br>
+		Uses the normal xoops language system. All files are stored in /modules/mrbs/language/yourlanguage.</p>
+	<p>
+      Frontend system (works independent from xoops website preferences!)<br>
+		Uses files located in /modules/mrbs and are called lang dot languagecode<br>
+		example: french language file is called lang.fr</p>
+	<p>
+      MRBS has its own system of choosing the frontend language and does not use 
+		the xoops website system to do this !!<br>
+		Because of that your MRBS frontend can be multilanguage.<br>
+&nbsp;</p>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="new_languagefiles">
+    <h4>I made a language file or faq file but cannot find it in preferences?</h4>
+    <ul>
+		<li>Saved the file in /modules/mrbs?</li>
+		<li>Verify the name of the language file -&gt; lang dot languagecode -&gt; 
+		example lang.en</li>
+		<li>Verify the name of the faq file -&gt;&nbsp; site_faq_languagecode dot 
+		html -&gt; example site_faq_en.html</li>
+		<li>Update your MRBS module -&gt; Xoops System / Modules / Update</li>
+		<li>Go to MRBS preferences and select your language or faq file</li>
+		<li>Save the settings</li>
+	</ul>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="change_words">
+    <h4>Where do i change the words used for periods and entry type?</h4>
+    <p>
+      The frontend of MRBS uses its own independent from Xoops language system. 
+		The files are called lang dot languagecode.<br>
+		Example: dutch language file is called lang.nl</p>
+	<p>
+      Because the MRBS frontend is by default multilanguage you have to change 
+		all the language files.<br>
+		Look for this in your language files around line 258. These are the 
+		words used for the entrytypes.</p>
+	<p>
+      //xoops - blueteen - entry types<br>
+		$vocab[&quot;A&quot;] = &quot;Cat1&quot;;<br>
+		$vocab[&quot;B&quot;] = &quot;Cat2&quot;;<br>
+		$vocab[&quot;C&quot;] = &quot;Cat3&quot;;<br>
+		$vocab[&quot;D&quot;] = &quot;Cat4&quot;;</p>
+	<p>
+      Look for this in your language files around line 285. These are the words 
+		used for the periods.</p>
+	<p>
+      // MRBS assumes that the descriptions are valid HTML and can be output<br>
+		// directly without any encoding. Please ensure that any special 
+		characters<br>
+		// are encoded, eg '&amp;' to '&amp;amp;', '&gt;' to '&amp;gt;', lower case e acute to
+		<br>
+		// '&amp;eacute;' or '&amp;#233;', etc.<br>
+		$vocab[&quot;P1&quot;] = &quot;Period&amp;nbsp;1&quot;;<br>
+		$vocab[&quot;P2&quot;] = &quot;Period&amp;nbsp;2&quot;;<br>
+		$vocab[&quot;P3&quot;] = &quot;Period&amp;nbsp;3&quot;;</p>
+	<p>
+      &nbsp;<a href="#top">Top</a>
+    </p>
+  </div>
+  
+  
+  <div id="enter_mail_room_area_admin">
+    <h4>Where do i enter the mail address of the room or area admin?</h4>
+    <ul>
+		<li>First create your areas and / or rooms</li>
+		<li>Hit the edit button of the area or room for witch you want to enter 
+		adin mail addresses</li>
+		<li>Enter the mail adresses you want to use, more than 1 then use a 
+		comma as seperator</li>
+		<li>Save</li>
+	</ul>
+    <a href="#top">Top</a>
+    
+  
+  
+	<p>&nbsp;</p>
+	<p>&nbsp;</div>

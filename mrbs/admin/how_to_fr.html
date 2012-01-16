@@ -1,0 +1,124 @@
+<!-- $Id: basic_how_to.html $ -->
+
+<div id="basic_how_to_contents">
+  <a name="top"></a><h4>Guide de d&eacute;marrage (24 f&eacute;vrier 2009)</h4>
+  <ul>
+    <li><a href="#getting_started">D&eacute;marrage</a></li>
+    <li><a href="#themes">Fonctionnement des th&egrave;mes sous MRBS</a></li>
+	<li><a href="#change_entry_types">Comment puis-je changer la couleur de fond des cellules pour mes types d'entr&eacute;es ?</a></li>
+	<li><a href="#location_languagefiles">O&ugrave; sont les fichiers de langue ?</a></li>
+	<li><a href="#new_languagefiles">J'ai cr&eacute;&eacute; un fichier de langue ou une FAQ mais je ne le vois pas dans les pr&eacute;f&eacute;rences.</a></li>
+	<li><a href="#change_words">O&ugrave; puis-je changer les libell&eacute;s utilis&eacute;s pour les p&eacute;riodes et les types d'entr&eacute;es ?</a></li>
+  </ul>
+</div>
+
+<div id="basic_how_to_body">
+
+  <div id="getting_started">
+    <h4>D&eacute;marrage.</h4>
+    <ul>
+		<li>Apr&egrave;s avoir install&eacute; le module, aller dans les pr&eacute;f&eacute;rences du module pour d&eacute;fini vos valeurs et les sauvegarder.</li>
+		<li>Cr&eacute;ez vos zones et salles.</li>
+		<li>Configurer les droits d'acc&egrave;s et d'administration au module (System/Groupes).</li>
+		<li>L'administrateur du site a automatiquement les droits complets sur le module MRBS.</li>
+	</ul>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="themes">
+    <h4>Fonctionnement des th&egrave;mes sous MRBS</h4>
+    <p>
+      Les th&egrave;mes li&eacute;s &agrave; MRBS sont ind&eacute;pendant des th&egrave;mes de votre site.</p>
+	<p>
+      Le fichier mrbs.css.php se trouvant dans le dossier /modules/mrbs g&egrave;re les valeurss communes aux th&egrave;mes.<br>
+		Les fichiers de th&egrave;mes pour MRBS sont stock&eacute;s dans le dossier /modules/mrbs/Themes et ont par d&eacute;faut, l'exension .inc<br>
+		Deux th&egrave;mes sont inclus : classic126.inc et default.inc</p>
+	<ul>
+		<li>Si vous voulez un nouveau th&egrave;me, cr&eacute;ez-le, et placez-le dans ce dossier.</li>
+		<li>Pour pouvoir s&eacute;lectionner ce th&egrave;me dans les pr&eacute;f&eacute;rences du module, vous devez d'abord mettre le module &agrave; jour.</li>
+	</ul>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="change_entry_types">
+    <h4>Comment puis-je changer la couleur de fond des cellules pour mes types d'entr&eacute;es ?</h4>
+    Ces couleurs peuvent &ecirc;tre modifi&eacute;es dans le fichier de th&egrave;me que vous utilisez. Aux environs de la ligne 70.<blockquote>
+		<p>// These are the colours used for distinguishing between the dfferent 
+		types of bookings in the main<br>
+		// displays in the day, week and month views<br>
+		$color_types = array(<br>
+		'A' =&gt; &quot;#FFCCFF&quot;,<br>
+		'B' =&gt; &quot;#99CCCC&quot;,<br>
+		.......</p>
+	</blockquote>
+	<p><a href="#top">Top</a>
+  </div>
+  
+  <div id="location_languagefiles">
+    <h4>O&ugrave; sont les fichiers de langue ?</h4>
+    <p>
+      MRBS a deux syst&egrave;mes diff&eacute;rents pour les fichiers de langue.</p>
+	<p>
+      Administration du module.<br>
+		Utilise la langue d&eacute;finie pour votre site. Tous les fichiers sont stock&eacute;s dans /modules/mrbs/language/french</p>
+	<p>
+      Partie publique du module (fonctionne de mani&egrave;re ind&eacute;pendante des pr&eacute;f&eacute;rences du site !)<br>
+		Utilise les fichiers se trouvant le dossier /modules/mrbs et nomm&eacute;s lang.code_langue<br>
+		Exemple: pour le fran&ccedil;ais, le fichier de langue se nomme lang.fr</p>
+	<p>
+      MRBS a son propre syst&egrave;me de s&eacute;lection de langue pour la partie publique, et n'utilise les pr&eacute;f&eacute;rences de votre site xoops !!<br>
+		Gr&acirc;ce &agrave; cela, MRBS peut &ecirc;tre multilangue.<br>
+&nbsp;</p>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="new_languagefiles">
+    <h4>J'ai cr&eacute;&eacute; un fichier de langue ou une FAQ mais je ne le vois pas dans les pr&eacute;f&eacute;rences ?</h4>
+    <ul>
+		<li>Le fichier se trouve-t'il bien dans le dossier /modules/mrbs ?</li>
+		<li>V&eacute;rifiez le nom du fichier de langue -&gt; lang.code_langue -&gt; 
+		Exemple lang.fr</li>
+		<li>V&eacute;rifiez le nom du fichier de FAQ -&gt;&nbsp; site_faq_code_langue.html -&gt; Exemple site_faq_fr.html</li>
+		<li>Mettez &agrave; jour le module MRBS -&gt; System / Modules / Mise &agrave; jour du module</li>
+		<li>Allez dans les pr&eacute;f&eacute;rences du module MRBS et s&eacute;lectionnez votre fichier de langue ou de FAQ.</li>
+		<li>Enregistrer les changements.</li>
+	</ul>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="change_words">
+    <h4>O&ugrave; puis-je changer les libell&eacute;s utilis&eacute;s pour les p&eacute;riodes et les types d'entr&eacute;es ?</h4>
+    <p>
+      La partie publique de MRBS utilise son propre syst&egrave;me de langue, ind&eacute;pendant de la langue de votre site. 
+		Les fichiers se nomment lang.code_langue<br>
+		Exemple: le fichier de langue en fran&ccedil;ais s'appelle lang.fr</p>
+	<p>
+      Comme MRBS est multilangue, vous devez mettre &agrave; jour &eacute;galement tous les fichiers de langue.<br>
+		Cherchez les valeurs suivantes aux alentours de la ligne 270. Vous trouverez les libell&eacute;s pour les types d'entr&eacute;es.</p>
+	<p>
+      //xoops - blueteen - entry types<br>
+		$vocab[&quot;A&quot;] = &quot;Cat1&quot;;<br>
+		$vocab[&quot;B&quot;] = &quot;Cat2&quot;;<br>
+		$vocab[&quot;C&quot;] = &quot;Cat3&quot;;<br>
+		$vocab[&quot;D&quot;] = &quot;Cat4&quot;;</p>
+	<p>
+      Cherchez les valeurs suivantes aux alentours de la ligne 300. Vous trouverez les libell&eacute;s pour les p&eacute;riodes.</p>
+	<p>
+      // MRBS assumes that the descriptions are valid HTML and can be output<br>
+		// directly without any encoding. Please ensure that any special 
+		characters<br>
+		// are encoded, eg '&amp;' to '&amp;amp;', '&gt;' to '&amp;gt;', lower case e acute to
+		<br>
+		// '&amp;eacute;' or '&amp;#233;', etc.<br>
+		$vocab[&quot;P1&quot;] = &quot;Period&amp;nbsp;1&quot;;<br>
+		$vocab[&quot;P2&quot;] = &quot;Period&amp;nbsp;2&quot;;<br>
+		$vocab[&quot;P3&quot;] = &quot;Period&amp;nbsp;3&quot;;</p>
+	<p>
+      &nbsp;<a href="#top">Top</a>
+    </p>
+  </div>
+  
+  
+  
+	<p>&nbsp;</p>
+	<p>&nbsp;</div>

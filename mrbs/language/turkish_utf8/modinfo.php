@@ -3,15 +3,15 @@
 $mydirname = basename(dirname(dirname(dirname( __FILE__ ))));
 $GLOBALS["MRBS_PREFIX"] = strtoupper($mydirname);
 
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_PREFERENCES", "Seçenekler");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_PERMISSION", "İzinler");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_DESC_PERMISSION", "Ziyaretçiler sadece görüntüleyebilir");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_INDEX", "Anasayfa");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_ABOUT", "Hakkında");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_HOW_TO", "Nasıl Yönetilir");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_ROOMS_AREAS", "Bölge ve Salon Yönetimi");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_HELP", "Yardım");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_UPDATES", "Güncelleme");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_PREFERENCES","Seçenekler");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_PERMISSION","İzinler");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_DESC_PERMISSION","Ziyaretçiler sadece görüntüleyebilir");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_INDEX","Anasayfa");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_ABOUT","Hakkında");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_HOW_TO","Nasıl Yönetilir");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_ROOMS_AREAS","Bölge ve Salon Yönetimi");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_HELP","Yardım");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_UPDATES","Güncelleme");
 
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_VIEW_BOOKING','Detay sayfasını gör');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_CREATE_BOOKING','Rezervasyon Olustur');
@@ -129,7 +129,7 @@ define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_JAVASCRIPT_CURSOR','Javascript imleci');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_JAVASCRIPT_CURSOR_DESC','Gün/Hafta/Ay aktif imleç görünümü.<br />
 By default, highlighting is implemented using the CSS :hover pseudo-class.<br />
 For old browers such as IE6, this is not supported and MRBS will automatically switch over to use JavaScript highlighting.<br />
-For which there are three different modes: "bgcolor", "class" and "hybrid" (See next parameter).<br />
+For which there are three different modes: "bgcolor","class" and "hybrid" (See next parameter).<br />
 If clients have VERY old browsers, then you may even want to disable the JavaScript highlighting.
 ');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_JAVASCRIPT_CURSOR_TRUE','Javascript imleci aktif');
@@ -201,7 +201,7 @@ define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_BOOKER_TRUE','Evet');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_BOOKER_FALSE','Hayır');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_ADMIN_BACKEND','Mail admin backend');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_ADMIN_BACKEND_DESC','Set the name of the Backend used to transport your mails.<br />
-Either "mail", "smtp" or "sendmail".
+Either "mail","smtp" or "sendmail".
 ');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_ADMIN_BACKEND_MAIL','mail');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_ADMIN_BACKEND_SMTP','smtp');

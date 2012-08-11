@@ -3,15 +3,15 @@
 $mydirname = basename(dirname(dirname(dirname( __FILE__ ))));
 $GLOBALS["MRBS_PREFIX"] = strtoupper($mydirname);
 
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_PREFERENCES", "Pr&eacute;f&eacute;rences");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_PERMISSION", "Permissions");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_DESC_PERMISSION", "Anonymous can only have view rights");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_INDEX", "Index");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_HOW_TO", "How to");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_ABOUT", "A propos");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_ROOMS_AREAS", "Gestion des salles/zones");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_HELP", "Aide");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_UPDATES", "Mises &agrave; jour");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_PREFERENCES","Pr&eacute;f&eacute;rences");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_PERMISSION","Permissions");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_DESC_PERMISSION","Anonymous can only have view rights");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_INDEX","Index");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_HOW_TO","How to");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_ABOUT","A propos");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_ROOMS_AREAS","Gestion des salles/zones");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_HELP","Aide");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_UPDATES","Mises &agrave; jour");
 
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_VIEW_BOOKING','View details page');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_CREATE_BOOKING','Create a booking');
@@ -129,7 +129,7 @@ define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_JAVASCRIPT_CURSOR','Curseur Javascript')
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_JAVASCRIPT_CURSOR_DESC','Contr&ocirc;le le curseur dans la vue par jour/semaine/mois.<br />
 Par d&eacute;faut, la surbrillance est impl&eacute;ment&eacute;e avec l\'utilisation de CSS :hover pseudo-class.<br />
 Pour les anciens navigateurs tels que IE6, ce n\'est pas support&eacute; et MRBS utilisera automatiquement la surbrillance g&eacute;r&eacute;e par JavaScript.<br />
-Pour cela, il y a 3 modes diff&eacute;rents : "bgcolor", "class" et "hybrid" (Voir le param&egrave;tre suivant).<br />
+Pour cela, il y a 3 modes diff&eacute;rents : "bgcolor","class" et "hybrid" (Voir le param&egrave;tre suivant).<br />
 Si les clients ont de tr&egrave;s anciens navigateurs, alors vous pouvez d&eacute;sactiver la surbrillance g&eacute;r&eacute;e par JavaScript.
 ');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_JAVASCRIPT_CURSOR_TRUE','Activer le curseur javascript');
@@ -203,7 +203,7 @@ define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_BOOKER_TRUE','Oui');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_BOOKER_FALSE','Non');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_ADMIN_BACKEND','M&eacute;thode d\'envoi des mails');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_ADMIN_BACKEND_DESC','Choisissez le mode d\'envoi des mails.<br />
-Soit "mail", "smtp" ou "sendmail".
+Soit "mail","smtp" ou "sendmail".
 ');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_ADMIN_BACKEND_MAIL','mail');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_ADMIN_BACKEND_SMTP','smtp');
@@ -310,7 +310,7 @@ define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_WEEKSTARTS_5','Vendredi');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_WEEKSTARTS_6','Samedi');
 
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_CHARSET','Mail charset');
-define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_CHARSET_DESC','Vous pouvez outrepasser le charset utilisé pour les mails si vous utilisez utf-8 pour l\'encodage unicode. Mais attention que les traductions dans les fichiers de langues supportent l\'encodage que vous allez choisir.<br />
+define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_CHARSET_DESC','Vous pouvez outrepasser le charset utilisÃ© pour les mails si vous utilisez utf-8 pour l\'encodage unicode. Mais attention que les traductions dans les fichiers de langues supportent l\'encodage que vous allez choisir.<br />
 Vous pouvez utiliser par exemple : iso-8859-1.
 ');
 

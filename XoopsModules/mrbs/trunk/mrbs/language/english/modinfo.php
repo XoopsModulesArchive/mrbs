@@ -3,15 +3,15 @@
 $mydirname = basename(dirname(dirname(dirname( __FILE__ ))));
 $GLOBALS["MRBS_PREFIX"] = strtoupper($mydirname);
 
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_PREFERENCES", "Preferences");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_PERMISSION", "Permissions");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_DESC_PERMISSION", "Anonymous can only have view rights");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_INDEX", "Home");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_ABOUT", "About");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_HOW_TO", "How to");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_ROOMS_AREAS", "Manage Rooms");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_HELP", "Help");
-define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_UPDATES", "Updates");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_PREFERENCES","Preferences");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_PERMISSION","Permissions");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_DESC_PERMISSION","Anonymous can only have view rights");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_INDEX","Home");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_ABOUT","About");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_HOW_TO","How to");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_ROOMS_AREAS","Manage Rooms");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_HELP","Help");
+define("_MI_".$GLOBALS["MRBS_PREFIX"]."_MENU_UPDATES","Updates");
 
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_VIEW_BOOKING','View details page');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_CREATE_BOOKING','Create a booking');
@@ -129,7 +129,7 @@ define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_JAVASCRIPT_CURSOR','Javascript cursor');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_JAVASCRIPT_CURSOR_DESC','Control the active cursor in day/week/month views.<br />
 By default, highlighting is implemented using the CSS :hover pseudo-class.<br />
 For old browers such as IE6, this is not supported and MRBS will automatically switch over to use JavaScript highlighting.<br />
-For which there are three different modes: "bgcolor", "class" and "hybrid" (See next parameter).<br />
+For which there are three different modes: "bgcolor","class" and "hybrid" (See next parameter).<br />
 If clients have VERY old browsers, then you may even want to disable the JavaScript highlighting.
 ');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_JAVASCRIPT_CURSOR_TRUE','Enable javascript cursor');
@@ -201,7 +201,7 @@ define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_BOOKER_TRUE','Yes');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_BOOKER_FALSE','No');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_ADMIN_BACKEND','Mail admin backend');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_ADMIN_BACKEND_DESC','Set the name of the Backend used to transport your mails.<br />
-Either "mail", "smtp" or "sendmail".
+Either "mail","smtp" or "sendmail".
 ');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_ADMIN_BACKEND_MAIL','mail');
 define('_MI_'.$GLOBALS["MRBS_PREFIX"].'_MAIL_ADMIN_BACKEND_SMTP','smtp');

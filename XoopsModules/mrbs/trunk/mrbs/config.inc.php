@@ -449,57 +449,57 @@ $mail_charset = $xoopsModuleConfig['mail_charset'];
 
 // Set to TRUE if you want to be notified when entries are booked. Default is
 // FALSE
-//define ("MAIL_ADMIN_ON_BOOKINGS", TRUE);
-define ("MAIL_ADMIN_ON_BOOKINGS", $xoopsModuleConfig['mail_admin_on_bookings']);//xoops - blueteen
+//define("MAIL_ADMIN_ON_BOOKINGS", TRUE);
+define("MAIL_ADMIN_ON_BOOKINGS", $xoopsModuleConfig['mail_admin_on_bookings']);//xoops - blueteen
 
 // Set to TRUE if you want AREA ADMIN to be notified when entries are booked.
 // Default is FALSE. Area admin emails are set in room_area admin page.
-//define ("MAIL_AREA_ADMIN_ON_BOOKINGS", FALSE);
-define ("MAIL_AREA_ADMIN_ON_BOOKINGS", $xoopsModuleConfig['mail_area_admin_on_book']);//xoops - blueteen
+//define("MAIL_AREA_ADMIN_ON_BOOKINGS", FALSE);
+define("MAIL_AREA_ADMIN_ON_BOOKINGS", $xoopsModuleConfig['mail_area_admin_on_book']);//xoops - blueteen
 
 // Set to TRUE if you want ROOM ADMIN to be notified when entries are booked.
 // Default is FALSE. Room admin emails are set in room_area admin page.
-//define ("MAIL_ROOM_ADMIN_ON_BOOKINGS", FALSE);
-define ("MAIL_ROOM_ADMIN_ON_BOOKINGS", $xoopsModuleConfig['mail_room_admin_on_book']);//xoops - blueteen
+//define("MAIL_ROOM_ADMIN_ON_BOOKINGS", FALSE);
+define("MAIL_ROOM_ADMIN_ON_BOOKINGS", $xoopsModuleConfig['mail_room_admin_on_book']);//xoops - blueteen
 
 // Set to TRUE if you want ADMIN to be notified when entries are deleted. Email
 // will be sent to mrbs admin, area admin and room admin as per above settings,
 // as well as to booker if MAIL_BOOKER is TRUE (see below).
-//define ("MAIL_ADMIN_ON_DELETE", TRUE);
-define ("MAIL_ADMIN_ON_DELETE", $xoopsModuleConfig['mail_admin_on_delete']);//xoops - blueteen
+//define("MAIL_ADMIN_ON_DELETE", TRUE);
+define("MAIL_ADMIN_ON_DELETE", $xoopsModuleConfig['mail_admin_on_delete']);//xoops - blueteen
 
 // Set to TRUE if you want to be notified on every change (i.e, on new entries)
 // but also each time they are edited. Default is FALSE (only new entries)
-//define ("MAIL_ADMIN_ALL", TRUE);
-define ("MAIL_ADMIN_ALL", $xoopsModuleConfig['mail_admin_all']);//xoops - blueteen
+//define("MAIL_ADMIN_ALL", TRUE);
+define("MAIL_ADMIN_ALL", $xoopsModuleConfig['mail_admin_all']);//xoops - blueteen
 
 // Set to TRUE is you want to show entry details in email, otherwise only a
 // link to view_entry is provided. Irrelevant for deleted entries. Default is
 // FALSE.
-//define ("MAIL_DETAILS", TRUE);
-define ("MAIL_DETAILS", $xoopsModuleConfig['mail_details']);//xoops - blueteen
+//define("MAIL_DETAILS", TRUE);
+define("MAIL_DETAILS", $xoopsModuleConfig['mail_details']);//xoops - blueteen
 
 // Set to TRUE if you want BOOKER to receive a copy of his entries as well any
 // changes (depends of MAIL_ADMIN_ALL, see below). Default is FALSE. To know
 // how to set mrbs to send emails to users/bookers, see INSTALL.
-//define ("MAIL_BOOKER", TRUE);
-define ("MAIL_BOOKER", $xoopsModuleConfig['mail_booker']);//xoops - blueteen
+//define("MAIL_BOOKER", TRUE);
+define("MAIL_BOOKER", $xoopsModuleConfig['mail_booker']);//xoops - blueteen
 
 // If MAIL_BOOKER is set to TRUE (see above) and you use an authentication
 // scheme other than 'auth_db', you need to provide the mail domain that will
 // be appended to the username to produce a valid email address (ie.
 // "@domain.com").
-define ("MAIL_DOMAIN", '');//xoops - blueteen - not used
+define("MAIL_DOMAIN", '');//xoops - blueteen - not used
 
 // If you use MAIL_DOMAIN above and username returned by mrbs contains extra
 // strings appended like domain name ('username.domain'), you need to provide
 // this extra string here so that it will be removed from the username.
-define ("MAIL_USERNAME_SUFFIX", '');//xoops - blueteen - not used
+define("MAIL_USERNAME_SUFFIX", '');//xoops - blueteen - not used
 
 // Set the name of the Backend used to transport your mails. Either "mail",
 // "smtp" or "sendmail". Default is 'mail'. See INSTALL for more details.
-//define ("MAIL_ADMIN_BACKEND", "mail");
-define ("MAIL_ADMIN_BACKEND", $xoopsModuleConfig['mail_admin_backend']);//xoops - blueteen
+//define("MAIL_ADMIN_BACKEND", "mail");
+define("MAIL_ADMIN_BACKEND", $xoopsModuleConfig['mail_admin_backend']);//xoops - blueteen
 
 /*******************
  * Sendmail settings
@@ -507,13 +507,13 @@ define ("MAIL_ADMIN_BACKEND", $xoopsModuleConfig['mail_admin_backend']);//xoops 
 
 // Set the path of the Sendmail program (only used with "sendmail" backend).
 // Default is "/usr/bin/sendmail"
-//define ("SENDMAIL_PATH", "/usr/bin/sendmail");
-define ("SENDMAIL_PATH", $xoopsModuleConfig['sendmail_path']);//xoops - blueteen
+//define("SENDMAIL_PATH", "/usr/bin/sendmail");
+define("SENDMAIL_PATH", $xoopsModuleConfig['sendmail_path']);//xoops - blueteen
 
 // Set additional Sendmail parameters (only used with "sendmail" backend).
 // (example "-t -i"). Default is ""
-//define ("SENDMAIL_ARGS", '');
-define ("SENDMAIL_ARGS", $xoopsModuleConfig['sendmail_args']);//xoops - blueteen
+//define("SENDMAIL_ARGS", '');
+define("SENDMAIL_ARGS", $xoopsModuleConfig['sendmail_args']);//xoops - blueteen
 
 /*******************
  * SMTP settings
@@ -521,24 +521,24 @@ define ("SENDMAIL_ARGS", $xoopsModuleConfig['sendmail_args']);//xoops - blueteen
 
 // Set smtp server to connect. Default is 'localhost' (only used with "smtp"
 // backend).
-//define ("SMTP_HOST", "smtp.free.fr");
-define ("SMTP_HOST", $xoopsModuleConfig['smtp_host']);//xoops - blueteen
+//define("SMTP_HOST", "smtp.free.fr");
+define("SMTP_HOST", $xoopsModuleConfig['smtp_host']);//xoops - blueteen
 
 // Set smtp port to connect. Default is '25' (only used with "smtp" backend).
-//define ("SMTP_PORT", 25);
-define ("SMTP_PORT", $xoopsModuleConfig['smtp_port']);//xoops - blueteen
+//define("SMTP_PORT", 25);
+define("SMTP_PORT", $xoopsModuleConfig['smtp_port']);//xoops - blueteen
 
 // Set whether or not to use SMTP authentication. Default is 'FALSE'
-//define ("SMTP_AUTH", FALSE);
-define ("SMTP_AUTH", $xoopsModuleConfig['smtp_auth']);//xoops - blueteen
+//define("SMTP_AUTH", FALSE);
+define("SMTP_AUTH", $xoopsModuleConfig['smtp_auth']);//xoops - blueteen
 
 // Set the username to use for SMTP authentication. Default is ""
-//define ("SMTP_USERNAME", '');
-define ("SMTP_USERNAME", $xoopsModuleConfig['smtp_username']);//xoops - blueteen
+//define("SMTP_USERNAME", '');
+define("SMTP_USERNAME", $xoopsModuleConfig['smtp_username']);//xoops - blueteen
 
 // Set the password to use for SMTP authentication. Default is ""
-//define ("SMTP_PASSWORD", '');
-define ("SMTP_PASSWORD", $xoopsModuleConfig['smtp_password']);//xoops - blueteen
+//define("SMTP_PASSWORD", '');
+define("SMTP_PASSWORD", $xoopsModuleConfig['smtp_password']);//xoops - blueteen
 
 /**********************
  * Miscellaneous settings
@@ -546,32 +546,32 @@ define ("SMTP_PASSWORD", $xoopsModuleConfig['smtp_password']);//xoops - blueteen
 
 // Set the language used for emails (choose an available lang.* file).
 // Default is 'en'.
-//define ("MAIL_ADMIN_LANG", 'en');
-define ("MAIL_ADMIN_LANG", $xoopsModuleConfig['mail_admin_lang']);//xoops - blueteen
+//define("MAIL_ADMIN_LANG", 'en');
+define("MAIL_ADMIN_LANG", $xoopsModuleConfig['mail_admin_lang']);//xoops - blueteen
 
 // Set the email address of the From field. Default is $mrbs_admin_email
-//define ("MAIL_FROM", $mrbs_admin_email);
+//define("MAIL_FROM", $mrbs_admin_email);
 if (empty($xoopsModuleConfig['mail_from'])) {
-define ("MAIL_FROM", $mrbs_admin_email);
+define("MAIL_FROM", $mrbs_admin_email);
 }
 else {
-	 define ("MAIL_FROM", $xoopsModuleConfig['mail_from']);//xoops - blueteen
+	 define("MAIL_FROM", $xoopsModuleConfig['mail_from']);//xoops - blueteen
 	 }
 
 // Set the recipient email. Default is $mrbs_admin_email. You can define
 // more than one recipient like this "john@doe.com,scott@tiger.com"
-//define ("MAIL_RECIPIENTS", $mrbs_admin_email);
+//define("MAIL_RECIPIENTS", $mrbs_admin_email);
 if (empty($xoopsModuleConfig['mail_recipients'])) {
-define ("MAIL_RECIPIENTS", $mrbs_admin_email);
+define("MAIL_RECIPIENTS", $mrbs_admin_email);
 }
 else {
-	 define ("MAIL_RECIPIENTS", $xoopsModuleConfig['mail_recipients']);//xoops - blueteen
+	 define("MAIL_RECIPIENTS", $xoopsModuleConfig['mail_recipients']);//xoops - blueteen
 	 }
 
 // Set email address of the Carbon Copy field. Default is ''. You can define
 // more than one recipient (see MAIL_RECIPIENTS)
-//define ("MAIL_CC", '');
-define ("MAIL_CC", $xoopsModuleConfig['mail_cc']);//xoops - blueteen
+//define("MAIL_CC", '');
+define("MAIL_CC", $xoopsModuleConfig['mail_cc']);//xoops - blueteen
 
 
 /**********
